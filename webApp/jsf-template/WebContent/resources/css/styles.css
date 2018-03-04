@@ -256,29 +256,54 @@
   padding: 7px 0px 0px;
 }
 
-/* line 237, ../../../../../sass/styles.scss */
-.login-wrapper {
-  background-color: #2cb1ad;
-  color: white;
+/* line 238, ../../../../../sass/styles.scss */
+.login-wrapper .login {
+  background: white;
+  padding: 20px;
+  margin: 250px auto 0px;
 }
 /* line 242, ../../../../../sass/styles.scss */
+.login-wrapper .login .form-item {
+  margin-bottom: 15px;
+}
+/* line 244, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item label {
   display: block;
 }
-/* line 245, ../../../../../sass/styles.scss */
+/* line 247, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input {
   display: block;
+  width: 100%;
+  padding: 10px 15px;
 }
-/* line 247, ../../../../../sass/styles.scss */
+/* line 251, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input[type=submit] {
+  margin-top: 10px;
   background-color: #03514d;
   border: none;
   color: white;
+  display: block;
+}
+
+/* line 262, ../../../../../sass/styles.scss */
+.background-page {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: 100% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 257, ../../../../../sass/styles.scss */
+  /* line 271, ../../../../../sass/styles.scss */
   .main-section {
     display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 278, ../../../../../sass/styles.scss */
+  .login-wrapper .login {
+    width: 80%;
   }
 }
