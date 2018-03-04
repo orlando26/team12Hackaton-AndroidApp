@@ -35,16 +35,7 @@ public class Register extends Form{
 			user.setLastName(lastName);
 			user.setEmail(email);
 			user.setPassword(hashedpassword);
-			user.setConfirmed(false);
 			HibernateSession.saveObject(user);
-			String url = getRequest().getRequestURL().toString();
-			String newUrl = url.replace("register", "confirmemail");
-			newUrl += "?key=" + name;
-			Email mailObject = new Email();
-			mailObject.setTo(email);
-			mailObject.setSubject("Email Confirmation");
-			mailObject.setMessage("Welcome" + name + "/nyou can confirm your email in the following link./n" + newUrl);
-			mailObject.send();
 			
 			redirect("/index.xhtml");
 		}else{

@@ -4,7 +4,7 @@ import javax.faces.application.FacesMessage;
 
 import com.jsftemplate.context.SessionContext;
 import com.jsftemplate.db.RmaUser;
-import com.jsftemplate.model.AppUserModel;
+import com.jsftemplate.model.RmaUserModel;
 import com.jsftemplate.utils.SHAHash;
 import com.jsftemplate.utils.SessionUtils;
 
@@ -24,7 +24,7 @@ public class Login extends Form{
 			errorMessage("Fill all the fields!");
 			return;
 		}
-		RmaUser user = AppUserModel.findByUserName(userName);
+		RmaUser user = RmaUserModel.findByUserName(userName);
 		if(validateUser(user)){
 			SessionUtils.setUserLogged(user);
 			redirect("/pages/home.xhtml");
@@ -40,10 +40,6 @@ public class Login extends Form{
 		}
 		if(!user.getPassword().equals(hashedPassword)){
 			errorMessage("incorrect password");
-			return false;
-		}
-		if(!user.getConfirmed()){
-			errorMessage("user not yet confirmed! check your email.");
 			return false;
 		}
 		return true;

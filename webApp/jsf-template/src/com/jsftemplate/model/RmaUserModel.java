@@ -9,7 +9,7 @@ import com.jsftemplate.db.RmaUser;
 import com.jsftemplate.hibernate.HibernateSession;
 import com.jsftemplate.hibernate.SQL;
 
-public class AppUserModel {
+public class RmaUserModel {
 	@SuppressWarnings("unchecked")
 	public static RmaUser findByUserName(String userName){
 		Session session = HibernateSession.getSession();
