@@ -8,13 +8,12 @@
       <meta attribute="class-description">
          This class contains the user detail. 
       </meta>
-      <id name="id" type="int" column="rma_id">
+      <id name="id" type="int" column="Usr_id">
          <generator class="native"/>
       </id>
       <property name="name" column="Usr_Name" type="string"/>
       <property name="lastName" column="Usr_LastName" type="string"/>
       <property name="email" column="Usr_Email" type="string"/>
       <property name="password" column="Usr_Password" type="string"/>
-      <property name="confirmed" column="Usr_Confirmed" type="yes_no"/>
    </class>
 </hibernate-mapping>
