@@ -187,96 +187,97 @@
   padding: 0px 10px;
   border: 1px solid #c1c1c1;
 }
-/* line 179, ../../../../../sass/styles.scss */
-.right-chat-textbox a i {
-  color: white;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 12px 0px;
+/* line 178, ../../../../../sass/styles.scss */
+.right-chat-textbox a {
+  color: #03514d;
+  background: white;
   margin-left: 20px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 3px;
 }
 
-/* line 192, ../../../../../sass/styles.scss */
+/* line 191, ../../../../../sass/styles.scss */
 .h100 {
   height: 100vh;
 }
 
-/* line 196, ../../../../../sass/styles.scss */
+/* line 195, ../../../../../sass/styles.scss */
 .categories-wrapper {
   background-color: #03514d;
   color: white;
 }
-/* line 199, ../../../../../sass/styles.scss */
+/* line 198, ../../../../../sass/styles.scss */
 .categories-wrapper .categories {
   width: 100%;
 }
-/* line 201, ../../../../../sass/styles.scss */
+/* line 200, ../../../../../sass/styles.scss */
 .categories-wrapper .categories ul {
   overflow: hidden;
   padding: 0px;
   margin-bottom: 0;
 }
-/* line 205, ../../../../../sass/styles.scss */
+/* line 204, ../../../../../sass/styles.scss */
 .categories-wrapper .categories ul li {
   list-style: none;
   width: 100%;
   float: left;
   padding: 20px 30px 20px;
 }
-/* line 212, ../../../../../sass/styles.scss */
+/* line 211, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category {
   border-bottom: 1px solid #c1c1c1;
 }
-/* line 214, ../../../../../sass/styles.scss */
+/* line 213, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category:hover {
   background: #2cb1ad;
 }
-/* line 218, ../../../../../sass/styles.scss */
+/* line 217, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category-img, .categories-wrapper .categories .category-detail {
   float: left;
 }
-/* line 221, ../../../../../sass/styles.scss */
+/* line 220, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category-img img {
   width: 30px;
   height: auto;
   text-align: left;
   float: fixed;
 }
-/* line 227, ../../../../../sass/styles.scss */
+/* line 226, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category-detail {
   margin-left: 10px;
 }
-/* line 229, ../../../../../sass/styles.scss */
+/* line 228, ../../../../../sass/styles.scss */
 .categories-wrapper .categories .category-detail p {
   margin: 0px;
   color: white;
   padding: 7px 0px 0px;
 }
 
-/* line 238, ../../../../../sass/styles.scss */
+/* line 237, ../../../../../sass/styles.scss */
 .login-wrapper .login {
   background: white;
   padding: 20px;
   margin: 250px auto 0px;
 }
-/* line 242, ../../../../../sass/styles.scss */
+/* line 241, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item {
   margin-bottom: 15px;
 }
-/* line 244, ../../../../../sass/styles.scss */
+/* line 243, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item label {
   display: block;
 }
-/* line 247, ../../../../../sass/styles.scss */
+/* line 246, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input {
   display: block;
   width: 100%;
   padding: 10px 15px;
 }
-/* line 251, ../../../../../sass/styles.scss */
+/* line 250, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input[type=submit] {
   margin-top: 10px;
   background-color: #03514d;
@@ -285,7 +286,7 @@
   display: block;
 }
 
-/* line 262, ../../../../../sass/styles.scss */
+/* line 261, ../../../../../sass/styles.scss */
 .background-page {
   background: url("../img/background.jpg") no-repeat center center fixed;
   background-size: 100% auto;
@@ -296,13 +297,13 @@
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 271, ../../../../../sass/styles.scss */
+  /* line 270, ../../../../../sass/styles.scss */
   .main-section {
     display: none;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 278, ../../../../../sass/styles.scss */
+  /* line 277, ../../../../../sass/styles.scss */
   .login-wrapper .login {
     width: 80%;
   }
