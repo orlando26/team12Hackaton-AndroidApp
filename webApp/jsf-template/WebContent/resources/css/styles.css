@@ -263,6 +263,11 @@
 }
 
 /* line 239, ../../../../../sass/styles.scss */
+.history-title {
+  text-align: center;
+}
+
+/* line 242, ../../../../../sass/styles.scss */
 h1 {
   display: block;
   color: white;
@@ -272,27 +277,32 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+/* line 250, ../../../../../sass/styles.scss */
+h1 a {
+  color: #03514d;
+  font-size: 16px;
+}
 
-/* line 249, ../../../../../sass/styles.scss */
+/* line 256, ../../../../../sass/styles.scss */
 ul.menu {
   overflow: hidden;
   padding: 0px;
   margin-bottom: 0;
 }
-/* line 253, ../../../../../sass/styles.scss */
+/* line 260, ../../../../../sass/styles.scss */
 ul.menu li {
   list-style: none;
   float: left;
   padding: 10px;
 }
-/* line 257, ../../../../../sass/styles.scss */
+/* line 264, ../../../../../sass/styles.scss */
 ul.menu li .icon {
   height: 40px;
   width: auto;
   display: block;
   margin: 0 auto;
 }
-/* line 263, ../../../../../sass/styles.scss */
+/* line 270, ../../../../../sass/styles.scss */
 ul.menu li a {
   padding: 30px 10px;
   border: solid 2px white;
@@ -302,27 +312,27 @@ ul.menu li a {
   text-align: center;
 }
 
-/* line 276, ../../../../../sass/styles.scss */
+/* line 283, ../../../../../sass/styles.scss */
 .login-wrapper .login {
   background: white;
   padding: 20px;
   margin: 250px auto 0px;
 }
-/* line 280, ../../../../../sass/styles.scss */
+/* line 287, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item {
   margin-bottom: 15px;
 }
-/* line 282, ../../../../../sass/styles.scss */
+/* line 289, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item label {
   display: block;
 }
-/* line 285, ../../../../../sass/styles.scss */
+/* line 292, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input {
   display: block;
   width: 100%;
   padding: 10px 15px;
 }
-/* line 289, ../../../../../sass/styles.scss */
+/* line 296, ../../../../../sass/styles.scss */
 .login-wrapper .login .form-item input[type=submit] {
   margin-top: 10px;
   background-color: #03514d;
@@ -331,7 +341,40 @@ ul.menu li a {
   display: block;
 }
 
-/* line 300, ../../../../../sass/styles.scss */
+/* line 307, ../../../../../sass/styles.scss */
+.history-wrapper {
+  background: #2cb1ad;
+}
+/* line 309, ../../../../../sass/styles.scss */
+.history-wrapper .history-records {
+  background: white;
+  padding: 20px 20px 30px;
+  margin-top: 15px;
+}
+/* line 313, ../../../../../sass/styles.scss */
+.history-wrapper .history-records label {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 316, ../../../../../sass/styles.scss */
+.history-wrapper .history-records label.radio {
+  font-weight: normal;
+}
+/* line 320, ../../../../../sass/styles.scss */
+.history-wrapper .history-records input {
+  display: block;
+  width: 100%;
+}
+/* line 323, ../../../../../sass/styles.scss */
+.history-wrapper .history-records input[type=submit] {
+  margin-top: 10px;
+  background-color: #03514d;
+  border: none;
+  color: white;
+  display: block;
+}
+
+/* line 333, ../../../../../sass/styles.scss */
 .background-page {
   background: url("../img/background.jpg") no-repeat center center fixed;
   background-size: 100% auto;
@@ -342,14 +385,41 @@ ul.menu li a {
 }
 
 @media only screen and (max-width: 320px) {
-  /* line 310, ../../../../../sass/styles.scss */
+  /* line 343, ../../../../../sass/styles.scss */
   .main-section {
     display: none;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 317, ../../../../../sass/styles.scss */
+  /* line 350, ../../../../../sass/styles.scss */
   .login-wrapper .login {
     width: 80%;
+  }
+
+  /* line 354, ../../../../../sass/styles.scss */
+  .h100 {
+    height: auto;
+  }
+
+  /* line 357, ../../../../../sass/styles.scss */
+  .main-section {
+    height: auto;
+  }
+  /* line 359, ../../../../../sass/styles.scss */
+  .main-section .left-sidebar {
+    background: #2cb1ad;
+  }
+  /* line 361, ../../../../../sass/styles.scss */
+  .main-section .left-sidebar .left-chat {
+    height: auto;
+  }
+  /* line 365, ../../../../../sass/styles.scss */
+  .main-section .right-sidebar {
+    min-height: 500px;
+  }
+
+  /* line 369, ../../../../../sass/styles.scss */
+  .right-chat-textbox input {
+    width: 75%;
   }
 }

@@ -1,7 +1,45 @@
 (function($){
 
 	var contact = '';
+	var clinical_edit = false;
+	var clinical_history = {
+		name: 'Laura Garza Salazar',
+		edad: 29,
+		menarquia: 13,
+		ritmo_menstrual: 'Regular',
+		last_period: '20-09-2017',
+		diseases: 'none',
+		pregnancies: 1
+	};
+	var edit= true;
 		
+	function fillClinicalHistory(history) {
+		$('#name-input').val(history.name);
+		$('#name-txt').text(history.name);
+		$('#edad-input').val(history.edad);
+		$('#edad-txt').text(history.edad);
+		$('#menarquia-input').val(history.menarquia);
+		$('#menarquia-txt').text(history.menarquia);
+		//$('#rithm-input-R').val(history.ritmo_menstrual);
+		//$('#rithm-txt').text(history.ritmo_menstrual);
+		$('#last-period-input').val(history.last_period);
+		$('#last-period-txt').text(history.last_period);
+		$('#diseases-input').val(history.diseases);
+		$('#diseases-txt').text(history.diseases);
+		$('#pregnancies-input').val(history.pregnancies);
+		$('#pregnancies-txt').text(history.pregnancies);
+	}
+
+	function toggleEdit() {
+		edit = !edit;
+		if (edit) {
+			$('.showEdit').show();
+			$('.hideEdit').hide();
+		} else {
+			$('.showEdit').hide();
+			$('.hideEdit').show();
+		}
+	}
 	function startConversation(_contact){
 		contact = _contact;
 		incommingMsg('Welcome, how can I help you?');
@@ -89,5 +127,16 @@
 
 	$('#menu-clinical-studies').click(function() {
 		console.log('click clinical studies');
+	});
+
+	$('#edit').click(function() {
+		toggleEdit();
+	});
+	fillClinicalHistory(clinical_history);
+	toggleEdit();
+
+	$('#editForm').submit(function (event) {
+		toggleEdit();
+		event.preventDefault();
 	});
 })(jQuery); 

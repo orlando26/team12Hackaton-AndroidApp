@@ -12,16 +12,57 @@
 </head>
 <body>
     <div class="container-fluid main-section history-wrapper">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1>Clinical History</h1>
+        <form id="editForm">
+            <div class="row">
+                <div class="col-xs-12 history-title">
+                    <h1>Clinical History <a href="#" id="edit">Edit</a></h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                
+            <div class="row history-records">
+                <div class="col-12">
+                    <label for="name">Name</label>
+                    <input type="text" id="name-input" name="name" class="showEdit"/>
+                    <p id="name-txt" class="hideEdit"></p>
+                </div>
+                <div class="col-12">
+                    <label for="edad">Age</label>
+                    <input type="text" id="edad-input" name="edad" class="showEdit"/>
+                    <p id="edad-txt" class="hideEdit"></p>
+                </div>
+                <div class="col-12">
+                    <label for="menarquia">Menarche</label>
+                    <input type="text" id="menarquia-input" name="menarquia" class="showEdit"/>
+                    <p id="menarquia-txt" class="hideEdit"></p>
+                </div>
+                <!--<div class="col-12">
+                    <label for="rithm">Menstrual Rithm</label>
+                    <input type="radio" id="rithm-input-R" name="rithm" class="showEdit" value="Regular"/>
+                    <label for="rithm-input-R" class="radio">Regular</label>
+                    <input type="radio" id="rithm-input-M" name="rithm" class="showEdit" value="Irregular"/>
+                    <label for="rithm-input-M" class="radio">Irregular</label>
+                    <p id="rithm-txt" class="hideEdit"></p>
+                </div>-->
+                <div class="col-12">
+                    <label for="last-period">Last Menstrual Period</label>
+                    <input type="text" id="last-period-input" name="last-period" class="showEdit"/>
+                    <p id="last-period-txt" class="hideEdit"></p>
+                </div>
+                <div class="col-12">
+                    <label for="diseases">Sexual Transmition diseases</label>
+                    <input type="text" id="diseases-input" name="diseases" class="showEdit"/>
+                    <p id="diseases-txt" class="hideEdit"></p>
+                </div>
+                <div class="col-12">
+                    <label for="pregnancies">Number of pregnancies</label>
+                    <input type="text" id="pregnancies-input" name="pregnancies" class="showEdit"/>
+                    <p id="pregnancies-txt" class="hideEdit"></p>
+                </div>
+                <div class="col-12" >
+                    <input type="submit"  value="Submit" class="showEdit"/>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
+<script src="../resources/js/scripts.js"></script>
 </html>
