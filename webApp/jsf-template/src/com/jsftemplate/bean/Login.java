@@ -27,7 +27,7 @@ public class Login extends Form{
 		RmaUser user = RmaUserModel.findByUserName(userName);
 		if(validateUser(user)){
 			SessionUtils.setUserLogged(user);
-			redirect("/pages/home.xhtml");
+			redirect("/pages/categories.html");
 		}
 
 	}
