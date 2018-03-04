@@ -62,4 +62,32 @@
 			$('#message-box').val('');
 		}
 	});
+
+	$('#category-cardio').click(function() {
+		console.log('click cardio category');
+	});
+
+	$('#category-trauma').click(function() {
+		console.log('click trauma category');
+	});
+
+	$('#menu-clinical-history').click(function() {
+		console.log('click clinical history menu');
+	});
+
+	$('#menu-faqs').click(function() {
+		console.log('click menu faqs');
+	});
+
+	$('#menu-talk-doctor').click(function() {
+		console.log('click talk doctor');
+	});
+
+	$('#menu-treatment').click(function() {
+		console.log('click menu treatment');
+	});
+
+	$('#menu-clinical-studies').click(function() {
+		console.log('click clinical studies');
+	});
 })(jQuery); 
